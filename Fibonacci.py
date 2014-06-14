@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # Fibonacci Sequence Generation
 
 def genFib():
