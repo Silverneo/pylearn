@@ -26,14 +26,15 @@ def gen_primes():
         number += 2
 
 def main():
+    print "Press Enter to generate next prime number, 's' to stop."
     generator = gen_primes()
     while True:
-        ans =raw_input("Press Y to generate the next prime, N to exit:")
+        ans =raw_input()
 
-        if ans == 'Y':
-            print generator.next()
-        else:
+        if ans == 's':
             break
+        else:
+            print generator.next()
 
 if __name__ == '__main__':
     main()
