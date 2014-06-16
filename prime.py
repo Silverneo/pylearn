@@ -29,7 +29,7 @@ def main():
     print "Press Enter to generate next prime number, 's' to stop."
     generator = gen_primes()
     while True:
-        ans =raw_input()
+        ans = raw_input()
 
         if ans == 's':
             break
