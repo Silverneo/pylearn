@@ -16,11 +16,9 @@ def main():
     product = factorial(num)
     print "{}! = {} by recursion".format(num, product)
     product = 1
-    n = num
-    while num > 1:
-        product = num * product
-        num = num - 1
-    print "{}! = {} by loop".format(n, product)
+    for i in range(1, num + 1):
+        product = product * i
+    print "{}! = {} by loop".format(num, product)
 
 
 if __name__ == "__main__":
